@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+
+<!-- Image binding example -->
+<img [src]="imageUrl" alt="Dynamic Image" style="display:block; margin-bottom: 10px;">
+
+<!-- Conditional rendering with *ngIf -->
+<p *ngIf="isLoggedIn">Welcome back!</p>
+
+<!-- List rendering with *ngFor -->
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<!-- Event binding -->
+<button (click)="onClick()">Click Me</button>
+
+<!-- Two-way data binding with ngModel -->
+<p>
+  <label>Enter your name: <input [(ngModel)]="name"></label>
+</p>
+<p>Your name is: {{ name }}</p>

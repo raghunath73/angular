@@ -1,0 +1,27 @@
+<!-- app.component.html -->
+<mat-toolbar color="primary" class="mat-toolbar">
+  <span>My Application</span>
+  <span>
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/contact">Contact</button>
+  </span>
+</mat-toolbar>
+
+<mat-sidenav-container class="tp-container">
+  <mat-sidenav mode="side" opened>
+    <section class="tp-section">
+      <span>File</span>
+    </section>
+    <section class="tp-section">
+      <span>Edit</span>
+    </section>
+    <section class="tp-section">
+      <span>View</span>
+    </section>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <h2>Main Content</h2>
+    <p>Welcome to the main content area.</p>
+  </mat-sidenav-content>
+</mat-sidenav-container>

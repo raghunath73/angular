@@ -1,0 +1,95 @@
+/* app.component.css */
+
+/* Style the main container, allowing space for the navbar */
+.tp-container {
+    position: absolute;
+    top: 64px; /* Space for the top navbar */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f5f5f5;
+  }
+  
+  /* Navbar styling */
+  .mat-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f51b5; /* Primary color */
+    color: white;
+    padding: 0 16px;
+  }
+  
+  /* Align navbar items */
+  .mat-toolbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .mat-toolbar span {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* Navbar button styling */
+  button[mat-button] {
+    color: rgb(29, 8, 159);
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Style for the sidenav sections */
+  .tp-section {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .tp-section:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Style for the main content area */
+  .sidenav-content {
+    padding: 20px;
+    background-color: #fff;
+    min-height: calc(100vh - 64px); /* Adjusted for navbar height */
+    overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar (sidenav) styling */
+  mat-sidenav {
+    width: 250px;
+    background-color: #fafafa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust content for mobile view */
+  @media (max-width: 768px) {
+    mat-sidenav {
+      width: 200px;
+    }
+  
+    /* Reduce padding for smaller screens */
+    .sidenav-content {
+      padding: 10px;
+    }
+  
+    .mat-toolbar span {
+      font-size: 18px;
+    }
+  
+    button[mat-button] {
+      font-size: 14px;
+    }
+  }
+  
